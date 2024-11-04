@@ -1,0 +1,68 @@
+/* Estilos básicos */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #333333;
+}
+
+header nav .logo {
+  font-family: 'Teko', sans-serif;
+  color: #F37FF2F;
+  font-size: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li a, .cta-button {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.cta-button {
+  padding: 0.5rem 1rem;
+  background-color: #F37FF2F;
+  border-radius: 5px;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Teko', sans-serif;
+  font-size: 4rem;
+}
+
+#benefits {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.benefit h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #F37FF2F;
+}
+
+.testimonial-carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+}
