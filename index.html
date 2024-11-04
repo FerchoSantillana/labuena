@@ -1,97 +1,128 @@
-/* General Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fercho Santillana Vocal Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Fercho Santillana Vocal Studio</div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#login">Log In</a></li>
+      </ul>
+      <a href="#reserva" class="cta-button">Agenda tu Clase</a>
+    </nav>
+  </header>
 
-/* Header */
-header {
-  background-color: #333333;
-  padding: 1rem 2rem;
-}
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Transforma tu voz con ciencia vocal avanzada</h1>
+      <p>Descubre el verdadero potencial de tu voz con clases personalizadas en Barcelona</p>
+      <a href="#reserva" class="cta-button">Reserva tu clase</a>
+    </div>
+  </section>
 
-header .logo {
-  font-family: 'Teko', sans-serif;
-  color: #F37FF2F;
-  font-size: 1.5rem;
-  display: inline-block;
-}
+  <!-- Historia Section -->
+  <section id="historia" class="historia">
+    <h2>Mi Historia</h2>
+    <p>Desde teatro musical hasta técnica vocal en Barcelona, mi pasión siempre ha sido ayudar a los alumnos a liberar su voz y descubrir su potencial. Con más de 12 años de experiencia y certificado por el Institute for Vocal Advancement (IVA), desarrollo planes personalizados para cada alumno, basados en ciencia vocal.</p>
+  </section>
 
-header ul {
-  list-style-type: none;
-  display: inline-flex;
-  gap: 1rem;
-}
+  <!-- Servicios Section -->
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio">
+      <h3>Clases Personalizadas</h3>
+      <p>Sesiones de 55 minutos enfocadas en tus necesidades específicas y metas vocales.</p>
+      <a href="#reserva" class="cta-button">Reserva ahora</a>
+    </div>
+    <div class="servicio">
+      <h3>Vocal Coaching Completo</h3>
+      <p>Más que técnica vocal: desarrollo escénico, preparación para grabaciones y asesoría completa.</p>
+      <a href="#reserva" class="cta-button">Solicita Coaching</a>
+    </div>
+    <div class="servicio">
+      <h3>Diagnóstico Vocal</h3>
+      <p>Evaluación completa de tu voz para establecer un plan de acción claro y adaptado.</p>
+      <a href="#reserva" class="cta-button">Reserva tu Diagnóstico</a>
+    </div>
+  </section>
 
-header ul li a, .cta-button {
-  color: #FFFFFF;
-  text-decoration: none;
-}
+  <!-- Testimonios Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>Lo que dicen mis alumnos</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial">
+        <p>“Gracias a las clases de Fercho, mi confianza y rango vocal han mejorado notablemente. ¡Recomendado!” - María P.</p>
+      </div>
+      <div class="testimonial">
+        <p>“Fercho no solo me ayudó a mejorar mi técnica, sino que me dio la confianza para actuar en escenarios.” - Carlos R.</p>
+      </div>
+      <div class="testimonial">
+        <p>“Cada clase es única y me siento apoyada en todo momento. ¡He progresado muchísimo!” - Juana A.</p>
+      </div>
+    </div>
+  </section>
 
-.cta-button {
-  background-color: #F37FF2F;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-}
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <h2>Blog</h2>
+    <div class="post">
+      <h3>Ciencia Vocal en la Música Moderna</h3>
+      <p>Descubre cómo la ciencia vocal puede ayudarte a mejorar tu técnica de canto.</p>
+      <a href="#" class="cta-button">Leer más</a>
+    </div>
+    <div class="post">
+      <h3>Controlando el Miedo Escénico</h3>
+      <p>Consejos y técnicas para enfrentarte a tus miedos y brillar en el escenario.</p>
+      <a href="#" class="cta-button">Leer más</a>
+    </div>
+  </section>
 
-/* Hero Section */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('hero-bg.jpg') no-repeat center center;
-  background-size: cover;
-  color: #FFFFFF;
-  height: 100vh;
-  text-align: center;
-}
+  <!-- Contacto Section -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre">
+      <label>Email</label>
+      <input type="email" placeholder="Tu email">
+      <label>Mensaje</label>
+      <textarea placeholder="Escribe tu mensaje"></textarea>
+      <button type="submit" class="cta-button">Enviar Mensaje</button>
+    </form>
+  </section>
 
-.hero-content h1 {
-  font-family: 'Teko', sans-serif;
-  font-size: 4rem;
-}
+  <!-- Log In Section -->
+  <section id="login" class="login">
+    <h2>Área de Alumnos</h2>
+    <form action="/login" method="post">
+      <label>Usuario</label>
+      <input type="text" placeholder="Usuario" required>
+      <label>Contraseña</label>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit" class="cta-button">Iniciar Sesión</button>
+    </form>
+  </section>
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-/* Sections */
-h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.5rem;
-  color: #F37FF2F;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.servicios, .testimonials, .blog, .contacto, .login {
-  padding: 2rem;
-  background-color: #E5E5E5;
-  margin-bottom: 2rem;
-}
-
-.servicio, .testimonial, .post {
-  text-align: center;
-  margin: 1rem auto;
-  padding: 1rem;
-  background: #FFFFFF;
-  border-radius: 8px;
-  max-width: 400px;
-}
-
-/* Footer */
-footer {
-  background-color: #333333;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 1rem;
-}
-
-footer .social-links a {
-  color: #F37FF2F;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Fercho Santillana Vocal Studio. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/ferchosantillanavocalstudio/" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@ferchosantillanavocalstudio" target="_blank">TikTok</a>
+    </div>
+  </footer>
+</body>
+</html>
